@@ -1,7 +1,7 @@
 services:
   network-deploy-service:
     networks:
-      - eazybank
+      - tonyriyanto
 
   microservice-base-config:
     extends:

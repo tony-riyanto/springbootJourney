@@ -16,7 +16,7 @@ services:
       service: network-deploy-service
 
   configserver:
-    image: "tonyriyanto/configserver:s6"
+    image: "tonyriyanto/configserver:s7"
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -34,7 +34,7 @@ services:
       service: microservice-base-config
 
   accounts:
-    image: "tonyriyanto/accounts:s6"
+    image: "tonyriyanto/accounts:s7"
     container_name: accounts-ms
     ports:
       - "8080:8080"
@@ -46,7 +46,6 @@ services:
     extends:
       file: common-config.yml
       service: microservice-configserver-config
-
 
 networks:
   tonyriyanto:
